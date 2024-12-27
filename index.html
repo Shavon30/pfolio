@@ -1,0 +1,85 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaquery.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Reem+Kufi:wght@400..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Shavon Fernando</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#form">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <nav id="hamburger-nav">
+        <div class="logo">Shavon Fernando</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+             <span></span>
+             <span></span>
+             <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+
+    <section id="profile">
+        <!-- <div class="section__pic-container">
+          <img src="assets/profile-pic.png" alt="shavon">
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello, I'm</p>
+            <h1 class="title">John doe</h1>
+            <p class="section__text__p2">Frontend Developer</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./assets/')"></button>
+            </div>
+        </div> -->
+
+        <h1> Im a Digital Marketer</h1>
+        <p>For xyz agency</p>
+    </section>
+
+    <br>
+
+
+    <section id="form">
+        <div class="contact-container">
+            <form action="https://api.web3forms.com/submit" method="POST" class="contact-left">
+                <div class="contact-left-title">
+                    <h2>Get in touch</h2>
+                    <hr>
+                </div>
+                <input type="hidden" name="access_key" value="e86fbe36-366c-4b12-83ac-d13560409a74">
+
+                <input type="text" name="name" placeholder="Your name" class="contact-inputs" required>
+                <input type="email" name="email" placeholder="Your Email" class="contact-inputs" required>
+                <textarea name="message" id="" placeholder="Your Message" class="contact-inputs" required></textarea>
+                <button type="submit">Submit <img src="" alt=""></button>
+            </form>
+            <div class="contact-right">
+                
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
